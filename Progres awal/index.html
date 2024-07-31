@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Office</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="image/logo.png" alt="Logo" />
+            <h1>E-OFFICE</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="manage_users.php">Manajemen User</a></li>
+                <li><a href="dashboard.php">Dashboard</a></li>
+                <li><a href="manage_letters.php">Manajemen Surat</a></li>
+            </ul>
+        </nav>
+        <div class="search-profile">
+            <input type="text" placeholder="Search...">
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="cards">
+            <a href="manage_letters/surat_masuk.html" class="card green">
+                <i class="fas fa-inbox"></i>
+                <h2>Surat Masuk</h2>
+            </a>
+            <a href="manage_letters/surat_keluar.html" class="card red">
+                <i class="fas fa-envelope-open"></i>
+                <h2>Surat Keluar</h2>
+            </a>
+            <a href="manage_letters/kategori.php" class="card yellow">
+                <i class="fas fa-tags"></i>
+                <h2>Kategori</h2>
+            </a>
+            <a href="sifat_surat.php" class="card blue">
+                <i class="fas fa-file-alt"></i>
+                <h2>Sifat Surat</h2>
+            </a>
+        </div>
+        <div class="welcome">
+            <h1>SELAMAT DATANG ADMIN</h1>
+            <p>Anda login sebagai administrator, Anda memiliki akses penuh terhadap sistem </p>
+        </div>
+    </div>
+</body>
+</html>
