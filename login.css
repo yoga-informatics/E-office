@@ -1,0 +1,98 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('image/MAKO.jpg') no-repeat center center fixed; /* Mengatur gambar background */
+    background-size: cover; /* Menyesuaikan ukuran gambar */
+}
+
+/* Gaya untuk seluruh container */
+.container {
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.8); /* Menambahkan transparansi pada background container */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center; /* Mengatur teks agar berada di tengah */
+}
+
+/* Gaya untuk gambar dalam container */
+.container img {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Gaya untuk header */
+header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Gaya umum untuk input */
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Gaya untuk tombol login dan registrasi */
+.button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Efek hover untuk tombol */
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Gaya untuk link "Lupa Password" */
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+}
+
+/* Gaya untuk teks pengalihan antara login dan registrasi */
+.signup {
+    margin-top: 20px;
+}
+
+.signup label {
+    color: #007bff;
+    cursor: pointer;
+}
+
+/* Menyembunyikan checkbox */
+#check {
+    display: none;
+}
+
+/* Menampilkan dan menyembunyikan form berdasarkan status checkbox */
+.form {
+    display: none;
+}
+
+#check:checked ~ .registration {
+    display: block;
+}
+
+#check:not(:checked) ~ .login {
+    display: block;
+}

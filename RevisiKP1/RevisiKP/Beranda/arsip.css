@@ -1,0 +1,235 @@
+/* Umum */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2a5535;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.logo-text {
+    margin-left: 10px;
+}
+
+.logo-text h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.logo-text p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Navigasi */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li .dropbtn:hover {
+    background-color: #3e6b47;
+    border-radius: 5px;
+}
+
+/* Dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2a5535;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #3e6b47;
+}
+
+nav ul li {
+    position: relative;
+}
+
+/* Profil Admin */
+.admin-profile {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+}
+
+.admin-profile i {
+    margin-right: 5px;
+}
+
+/* Kontainer Utama */
+.container {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Judul Halaman */
+h1 {
+    color: white; /* Ubah teks menjadi putih */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+    background-color: #2a5535; /* Warna solid hijau sama dengan header */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Tabel Styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table thead th {
+    background-color: #2a5535; /* Warna solid hijau sama dengan header */
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+
+.table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+    background-color: #e6f7e6;
+}
+
+.table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table td:first-child {
+    text-align: center;
+}
+
+.table td:last-child {
+    text-align: right;
+}
+
+.table td {
+    padding: 12px 20px;
+}
+
+.table tbody td {
+    vertical-align: middle;
+}
+
+/* Hover Effect */
+.table tbody tr:hover td {
+    background-color: #eaf4ea;
+}
+/* Styling for the delete button */
+/* Styling for the action buttons in the table */
+.btn-arsip {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-arsip:hover {
+    background-color: #0056b3; /* Darker blue background on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.btn-arsip:active {
+    background-color: #00408d; /* Even darker blue when button is clicked */
+    transform: scale(0.95); /* Slightly shrink the button on click */
+}
+
+
+/* Footer */
+footer {
+    background-color: #2d572c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}

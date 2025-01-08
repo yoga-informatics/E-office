@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Office</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="arsip_surat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="image/logo.png" alt="Logo" />
+            <div class="logo-text">
+                <h1>E-OFFICE</h1>
+                <p>KODIKLAT TNI AD</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li class="dropdown">
+                    <a href="master_data.php" class="dropbtn">Master Data</a>
+                    <div class="dropdown-content">
+                        <a href="arsip_surat.php">Arsip Surat</a>
+                        <a href="disposisi.php">Disposisi</a>
+                        <a href="kategori_surat.php">Kategori Surat</a>
+                    </div>
+                </li>
+                <li><a href="index.html">Surat Masuk</a></li>
+                <li><a href="master_data.php">Surat Keluar</a></li>
+                <li><a href="manage_letters.php">Pengguna</a></li>
+                <li class="dropdown">
+                    <a href="manage_letters.php" class="dropbtn">Laporan</a>
+                    <div class="dropdown-content">
+                        <a href="laporan_masuk.php">Laporan Masuk</a>
+                        <a href="laporan_keluar.php">Laporan Keluar</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="search-profile">
+            <i class="fas fa-search"></i>
+            <div class="admin-profile">
+                <i class="fas fa-user-circle"></i>
+                <span>Admin</span>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Data Surat</h1>
+        <div class="table-container">
+            <h2>Data Arsip Surat Masuk</h2>
+            <div class="table-controls">
+                <div class="search-bar">
+                    <label for="search-in">Search</label>
+                    <input type="text" id="search-in" />
+                </div>
+                <div class="pagination">
+                    <button class="prev">Previous</button>
+                    <span class="current-page">1</span>
+                    <button class="next">Next</button>
+                </div>
+            </div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>No Agenda</th>
+                        <th>No Surat Masuk</th>
+                        <th>Pengirim</th>
+                        <th>Tgl. Arsip</th>
+                        <th>Lokasi Arsip</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will go here -->
+                </tbody>
+            </table>
+        </div>
+        <div class="table-container">
+            <h2>Data Arsip Surat Keluar</h2>
+            <div class="table-controls">
+                <div class="search-bar">
+                    <label for="search-out">Search</label>
+                    <input type="text" id="search-out" />
+                </div>
+                <div class="pagination">
+                    <button class="prev">Previous</button>
+                    <span class="current-page">1</span>
+                    <button class="next">Next</button>
+                </div>
+            </div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>No Agenda</th>
+                        <th>No Surat Keluar</th>
+                        <th>Penerima</th>
+                        <th>Tgl. Arsip</th>
+                        <th>Lokasi Arsip</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will go here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
