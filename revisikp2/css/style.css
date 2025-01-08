@@ -1,0 +1,209 @@
+/* Reset beberapa gaya default */
+body, h1, h2, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background-color: #2d572c;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-text h1 {
+    margin: 0;
+    font-size: 24px; /* Sesuaikan ukuran font sesuai kebutuhan */
+    margin-bottom: 5px; /* Menambahkan jarak bawah */
+}
+
+.logo-text p {
+    margin: 0;
+    font-size: 18px; /* Sesuaikan ukuran font sesuai kebutuhan */
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+    position: relative; /* Added for dropdown positioning */
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li i {
+    margin-right: 5px; /* Menambahkan jarak antara ikon dan teks */
+}
+
+.search-profile {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Tambahkan jarak antara ikon pencarian dan admin */
+}
+
+.search-profile i {
+    font-size: 20px;
+}
+
+.admin-profile {
+    display: flex;
+    align-items: center;
+}
+
+.admin-profile i {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.admin-profile span {
+    font-size: 16px;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Card Style */
+.card {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px; /* Menambahkan jarak antara kartu */
+}
+
+.card i {
+    font-size: 30px; /* Ukuran ikon */
+    margin-right: 10px; /* Jarak antara ikon dan teks */
+}
+
+.card h2 {
+    margin: 0; /* Hapus margin default h2 */
+}
+
+/* Card Colors */
+.card.green {
+    background-color: #28a745;
+}
+
+.card.red {
+    background-color: #dc3545;
+}
+
+.card.yellow {
+    background-color: #ffc107;
+}
+
+.card.blue {
+    background-color: #17a2b8;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Mendukung tampilan responsif */
+    margin-bottom: 40px; /* Menambahkan jarak bawah pada kartu */
+}
+
+/* Welcome Section */
+.welcome {
+    background-color: #2d572c;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px; /* Menambahkan jarak bawah pada welcome section */
+}
